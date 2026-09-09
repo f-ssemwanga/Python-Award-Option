@@ -1,1 +1,22 @@
-solutions/week1_solutions.ipynb
+# Solutions are kept locally and published to a separate private repo
+solutions/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Student-generated databases and data files
+*.db
+!Week9/students.db
+*.pickle
+*.pkl
+
+# OS
+.DS_Store
+Thumbs.db

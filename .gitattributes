@@ -1,0 +1,2 @@
+# .gitignore must stay LF: a CRLF here appends a stray CR to every ignore pattern
+.gitignore text eol=lf
