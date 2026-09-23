@@ -28,24 +28,24 @@ Both lanes work in the same room on the same topic, and come together for the pl
 
 Fast Track is **not** a harder version of the Core challenges. Repeating the basics at a higher difficulty teaches you nothing, so Fast Track does different work.
 
-From Week 7 onwards the topics are new to everyone, so there is nothing to skip. Fast Track becomes an **additional data strand** instead, open to anybody who wants it.
+The lanes only run where GCSE has already covered the basics, which is Weeks 1 to 5. From Week 6 onwards, file handling, object-oriented programming, persistence and databases are new to everyone, so the whole class works through the same material together.
 
 ### Weekly delivery
 
 | Week | Topic | Core | Fast Track |
 | --- | --- | --- | --- |
-| 1 | Introduction to Python, Git and notebooks | Variables, `input`, arithmetic, f-strings | Functions written properly: type hints, docstrings, returning values, self-checking tests |
+| 1 | Introduction to Python, Git and notebooks | Variables, `input`, arithmetic, f-strings | Functions written properly: docstrings, and returning a value instead of printing it |
 | 2 | Control structures | `if`, `elif`, `else`, `for`, `while` | Linear and binary search, counting the cost of each on bigger and bigger lists |
-| 3 | Functions and modules | Defining functions, parameters, return values, `math` and `random` | Your own module in a `.py` file, `__name__ == "__main__"`, default arguments, testing with `assert` |
-| 4 | Data structures | Lists, dictionaries, tuples | Nested structures, comprehensions, `Counter`, choosing the right structure and saying why |
+| 3 | Functions and modules | Defining functions, parameters, return values, `math` and `random` | Your own module in a `.py` file, default arguments, testing with `assert` |
+| 4 | Data structures | Lists and tuples | Dictionaries, then stacks and queues built and used in Python |
 | 5 | Validation and error handling | `try`, `except`, validation loops | Close to Core this week, since this is new to nearly everyone. Custom exceptions and `finally` |
-| 6 | File handling | `open`, reading, writing, the `with` statement, CSV | `csv` and `json` modules, first `pandas` DataFrame, first chart |
-| 7 | Object-oriented programming | Classes, attributes, methods, `__init__` | Additional strand: inheritance, `__str__` and `__repr__` |
-| 8 | Persistence: from files to objects | Saving and loading objects with `pickle` | Additional strand: `json`, and why `pickle` is unsafe for files you did not make |
-| 9 | Databases and Python | SQLite and SQL from Python | Additional strand: parameterised queries and SQL injection, joins, query results into a DataFrame |
-| 10 | Portfolio project | A program using classes, a database, validation and error handling, on GitHub | The same, plus an analysis notebook: query, chart, and write up what the data shows |
+| 6 | File handling | `open`, reading, writing, the `with` statement, CSV | No split, new to everyone |
+| 7 | Object-oriented programming | Classes, attributes, methods, `__init__` | No split, new to everyone |
+| 8 | Persistence: from files to objects | Saving and loading objects with `pickle` | No split, new to everyone |
+| 9 | Databases and Python | SQLite and SQL from Python | No split, new to everyone |
+| 10 | Portfolio project | A program using classes, a database, validation and error handling, on GitHub | No split, the same project for everyone |
 
-Week 1 is fully written for both lanes. The Fast Track material for the later weeks is being written ahead of each lesson, and the table above is the plan it follows.
+Week 1 is fully written for both lanes. The Fast Track material for Weeks 2 to 5 is being written ahead of each lesson, and the table above is the plan it follows.
 
 Git and GitHub are taught to everyone together in Week 1, because nobody can hand in any work without a repository. Git is new to both lanes, so there is no split for that part of the lesson.
 
@@ -58,7 +58,7 @@ These are the course's topics, and the week each one is taught in.
 - **Working with notebooks** (Week 1, used every week after): running code interactively, cell by cell. Notebooks are how the whole course is delivered rather than a topic of their own, and they are the standard tool for data work at university.
 - **Control structures** (Week 2): loops and conditional statements to control the flow of a program.
 - **Functions and modules** (Week 3): reusable, organised code.
-- **Data structures** (Week 4): lists, dictionaries, sets and tuples for managing collections of data.
+- **Data structures** (Week 4): lists and tuples for everyone, with dictionaries, stacks and queues in Fast Track.
 - **Validation and error handling** (Week 5): robust code that copes with bad input.
 - **File handling** (Week 6): reading from and writing to files.
 - **Object-oriented programming** (Weeks 7 and 8): classes and objects to model real-world things, and saving them between runs.
