@@ -6,6 +6,8 @@ A ten week Python course for sixth form students heading into STEM subjects at u
 
 The course was first written for students who had not studied programming at GCSE. It now also takes students who have, so it runs in two lanes.
 
+The challenges are the kind of work Python is used for in science and engineering: processing lab readings, turning formulas into functions, estimating uncertainty, and simple numerical methods. Where it fits, they are set in college life too.
+
 ### Getting started
 
 1. **`SETUP.md`**: install Python, and get VS Code running notebooks. Read this first.
@@ -35,8 +37,8 @@ The lanes only run where GCSE has already covered the basics, which is Weeks 1 t
 | Week | Topic | Core | Fast Track |
 | --- | --- | --- | --- |
 | 1 | Introduction to Python, Git and notebooks | Variables, `input`, arithmetic, f-strings | Functions written properly: docstrings, and returning a value instead of printing it |
-| 2 | Control structures | `if`, `elif`, `else`, `for`, `while` | Linear and binary search, counting the cost of each on bigger and bigger lists |
-| 3 | Functions and modules | Defining functions, parameters, return values, `math` and `random` | Your own module in a `.py` file, default arguments, testing with `assert` |
+| 2 | Control structures | `if`, `elif`, `else`, `for`, `while` | Linear and binary search, then the bisection method for square roots |
+| 3 | Functions and modules | Defining functions, parameters, return values, `math` and `random` | Default arguments, your own physics module in a `.py` file, repeatable random experiments |
 | 4 | Data structures | Lists and tuples | Dictionaries, then stacks and queues built and used in Python |
 | 5 | Validation and error handling | `try`, `except`, validation loops | Close to Core this week, since this is new to nearly everyone. Custom exceptions and `finally` |
 | 6 | File handling | `open`, reading, writing, the `with` statement, CSV | No split, new to everyone |
@@ -45,7 +47,7 @@ The lanes only run where GCSE has already covered the basics, which is Weeks 1 t
 | 9 | Databases and Python | SQLite and SQL from Python | No split, new to everyone |
 | 10 | Portfolio project | A program using classes, a database, validation and error handling, on GitHub | No split, the same project for everyone |
 
-Week 1 is fully written for both lanes. The Fast Track material for Weeks 2 to 5 is being written ahead of each lesson, and the table above is the plan it follows.
+Weeks 1 to 4 are fully written for both lanes. Week 5 is being written ahead of its lesson, and the table above is the plan it follows.
 
 Git and GitHub are taught to everyone together in Week 1, because nobody can hand in any work without a repository. Git is new to both lanes, so there is no split for that part of the lesson.
 
