@@ -1,4 +1,7 @@
-# Solutions are kept locally and published to a separate private repo
+# Teacher-only files. Everything in solutions/ stays on this machine and never goes to GitHub:
+#   solutions/PASSPHRASES.md    the passphrase for each week's locked model solutions
+#   solutions/weekN.md          the model solutions in plain text
+#   solutions/weekN-lesson-plan.md
 solutions/
 
 # Jupyter
