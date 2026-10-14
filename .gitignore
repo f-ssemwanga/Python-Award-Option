@@ -23,3 +23,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local editor settings and exported handouts
+.vscode/
+handouts/
