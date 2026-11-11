@@ -15,7 +15,6 @@ venv/
 
 # Student-generated databases and data files
 *.db
-!Week9/students.db
 *.pickle
 *.pkl
 

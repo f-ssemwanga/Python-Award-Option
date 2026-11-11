@@ -28,12 +28,12 @@ They were chosen for geographic spread rather than at random. Lerwick against Ca
 
 | File | What it is | Used from |
 | --- | --- | --- |
-| `oxford_2015_2025.csv` | Oxford only, 2015 to 2025, 132 rows | Weeks 1 and 2 |
-| `uk_weather.csv` | All five stations, all years, 7,617 rows | Weeks 3, 4, 7, 8, 9, 10 |
-| `raw/*.txt` | The original Met Office files, untouched | Weeks 5 and 6 |
+| `oxford_2015_2025.csv` | Oxford only, 2015 to 2025, 132 rows | A small extract for trying ideas out |
+| `uk_weather.csv` | All five stations, all years, 7,617 rows | Weeks 6 to 10 |
+| `raw/*.txt` | The original Met Office files, untouched | Reference, and a harder parsing exercise |
 | `prepare_data.py` | The script that turns `raw/` into the CSVs | Reference |
 
-The raw files are kept deliberately. They are awkward: seven lines of header before the data starts, missing months marked `---`, estimated values marked `*`, and a trailing `Provisional` flag on recent rows. That awkwardness is the point. Weeks 5 and 6 are about validation, error handling and file parsing, and real data that needs cleaning teaches those far better than a tidy file that does not.
+The raw files are kept deliberately. They are awkward: seven lines of header before the data starts, missing months marked `---`, estimated values marked `*`, and a trailing `Provisional` flag on recent rows. That awkwardness makes them a good stretch exercise after Weeks 5 and 6: real data that needs cleaning teaches validation and file parsing far better than a tidy file.
 
 ## Columns
 

@@ -41,13 +41,13 @@ The lanes only run where GCSE has already covered the basics, which is Weeks 1 t
 | 3 | Functions and modules | Defining functions, parameters, return values, `math` and `random` | Default arguments, your own physics module in a `.py` file, repeatable random experiments |
 | 4 | Data structures | Lists and tuples | Dictionaries, then stacks and queues built and used in Python |
 | 5 | Validation and error handling | `try`, `except`, validation loops | Raising your own errors, then `else` and `finally`. Most people are Core this week, since `try` is new to nearly everyone |
-| 6 | File handling | `open`, reading, writing, the `with` statement, CSV | No split, new to everyone |
-| 7 | Object-oriented programming | Classes, attributes, methods, `__init__` | No split, new to everyone |
-| 8 | Persistence: from files to objects | Saving and loading objects with `pickle` | No split, new to everyone |
-| 9 | Databases and Python | SQLite and SQL from Python | No split, new to everyone |
-| 10 | Portfolio project | A program using classes, a database, validation and error handling, on GitHub | No split, the same project for everyone |
+| 6 | File handling | `open`, `with`, writing and reading files, the weather CSV, a first chart | No split, new to everyone |
+| 7 | Object-oriented programming | Classes, attributes, methods, `__init__`, a `WeatherStation` class, inheritance as the extension | No split, new to everyone |
+| 8 | Persistence: saving objects | `pickle` for lists and objects, a cache, and JSON as the safe alternative | No split, new to everyone |
+| 9 | Databases and Python | SQLite from Python, safe `?` placeholders, `SELECT`, `GROUP BY`, saving objects in a table | No split, new to everyone |
+| 10 | Portfolio project | A weather explorer program: menu, class, validation, a chart, saved results, on GitHub | No split, the same project for everyone |
 
-Weeks 1 to 5 are fully written for both lanes.
+All ten weeks are written. From Week 6 every week reads the weather data and ends with one chart.
 
 Git and GitHub are taught to everyone together in Week 1, because nobody can hand in any work without a repository. Git is new to both lanes, so there is no split for that part of the lesson.
 
