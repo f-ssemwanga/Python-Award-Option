@@ -31,7 +31,7 @@ def _tidy_brackets(value):
     return " ".join(text.split())
 
 
-_TIDY = {1: _tidy_week1, 2: _tidy_week2, 3: _tidy_brackets, 4: _tidy_brackets}
+_TIDY = {1: _tidy_week1, 2: _tidy_week2, 3: _tidy_brackets, 4: _tidy_brackets, 5: _tidy_brackets}
 
 # week: (fingerprints of the right answers, explanation shown for a wrong answer)
 _PLACEMENT = {1: ({'q1': '8c25cb3686462e9a',
@@ -72,7 +72,19 @@ _PLACEMENT = {1: ({'q1': '8c25cb3686462e9a',
       'q2': '-1 means the last item: 23.',
       'q3': "append adds 'd' to the end, pop(0) removes 'a' from the front: ['b', 'c', 'd'].",
       'q4': 'grid[1] is the row [3, 4], and [0] is its first item: 3.',
-      'q5': '15, 16 and 23 are over 10, so 3.'})}
+      'q5': '15, 16 and 23 are over 10, so 3.'}),
+ 5: ({'q1': 'a50aba76697ec0b5',
+      'q2': '32809fe64114f9d6',
+      'q3': '47d8a4a86c7433e2',
+      'q4': 'b1a812dda513c887',
+      'q5': '4e07408562bedb8b'},
+     {'q1': 'int() only takes whole numbers, so "12.5" gives a ValueError. float("12.5") would '
+            'work.',
+      'q2': 'The positions are 0, 1 and 2, so [3] is past the end: IndexError.',
+      'q3': 'The division fails, so print("A") never runs. except prints B, then the program '
+            'carries on to C.',
+      'q4': 'A dictionary key that is not there gives a KeyError.',
+      'q5': 'abc fails int(), -5 fails the if, 7 is accepted: three times.'})}
 
 _HINTS = {(1, 'Core 1'): 'Y2Vsc2l1cyAgICA8LSBhc2sgdGhlIHVzZXIsIGFuZCB0dXJuIHRoZSBhbnN3ZXIgaW50byBhIGZsb2F0CmZhaHJlbmhlaXQgPC0gY2Vsc2l1cyAqIDkgLyA1ICsgMzIKcHJpbnQgYm90aCwgb25lIGRlY2ltYWwgcGxhY2UgZWFjaAoKVGhlIGtleSBsaW5lOgogICAgY2Vsc2l1cyA9IGZsb2F0KGlucHV0KCJFbnRlciBhIHRlbXBlcmF0dXJlIGluIENlbHNpdXM6ICIpKQoKT25lIGRlY2ltYWwgcGxhY2UgaW4gYW4gZi1zdHJpbmc6ICB7ZmFocmVuaGVpdDouMWZ9',
  (1, 'Core 2'): 'dG90YWwgPC0gYWNhZGVtaWMgKyBzcG9ydCArIG11c2ljCnBlcl9wdXBpbCA8LSB0b3RhbCAvIHB1cGlscwpwcmludCB0aGUgdGl0bGUgbGluZQpwcmludCBvbmUgbGluZSBwZXIgZmlndXJlLCBlYWNoIG9uZSBhbiBmLXN0cmluZwoKVGhlIGZpcnN0IHR3byBsaW5lczoKICAgIHByaW50KGYiSG91c2UgcmVwb3J0OiB7aG91c2V9LCB7dGVybX0iKQogICAgcHJpbnQoZiIgIEFjYWRlbWljIHBvaW50czoge2FjYWRlbWljOj40fSIpCgo6PjQgcmlnaHQtYWxpZ25zIGEgbnVtYmVyIGluIDQgc3BhY2VzLCB3aGljaCBsaW5lcyB0aGUgY29sdW1uIHVwLgpPbmUgZGVjaW1hbCBwbGFjZSBpcyA6LjFm',
@@ -97,7 +109,13 @@ _HINTS = {(1, 'Core 1'): 'Y2Vsc2l1cyAgICA8LSBhc2sgdGhlIHVzZXIsIGFuZCB0dXJuIHRoZS
  (4, 'Core 3'): 'aW1wb3J0IG1hdGgKdG90YWwgPC0gMApmb3IgbGVuZ3RoLCBwZXJpb2QgaW4gcmVzdWx0czoKICAgIGcgPC0gNCAqIG1hdGgucGkgKiogMiAqIGxlbmd0aCAvIHBlcmlvZCAqKiAyCiAgICBwcmludCBsZW5ndGgsIHBlcmlvZCBhbmQgZywgZWFjaCB0byAyIGRlY2ltYWwgcGxhY2VzCiAgICBhZGQgZyB0byB0b3RhbApwcmludCB0b3RhbCAvIGxlbihyZXN1bHRzKQoKZm9yIGxlbmd0aCwgcGVyaW9kIGluIHJlc3VsdHMgdW5wYWNrcyBlYWNoIHR1cGxlIGludG8gdHdvIHZhcmlhYmxlcy4=',
  (4, 'Fast Track 1'): 'ZGVmIG1vbGFyX21hc3MoZm9ybXVsYSk6CiAgICB0b3RhbCA8LSAwCiAgICBmb3IgZWxlbWVudCBpbiBmb3JtdWxhOgogICAgICAgIHRvdGFsIDwtIHRvdGFsICsgQVRPTUlDX01BU1NbZWxlbWVudF0gKiBmb3JtdWxhW2VsZW1lbnRdCiAgICByZXR1cm4gcm91bmQodG90YWwsIDIpCgpmb3IgZWxlbWVudCwgY291bnQgaW4gZm9ybXVsYS5pdGVtcygpOiBnaXZlcyB5b3UgYm90aCBhdCBvbmNlLg==',
  (4, 'Fast Track 2'): 'cGFpcnMgPC0geyIpIjogIigiLCAiXSI6ICJbIiwgIn0iOiAieyJ9CnN0YWNrIDwtIGVtcHR5IGxpc3QKZm9yIGVhY2ggY2hhcmFjdGVyIGluIHRleHQ6CiAgICBpZiBpdCBpcyBhbiBvcGVuaW5nIGJyYWNrZXQ6IHB1c2ggaXQKICAgIGlmIGl0IGlzIGEgY2xvc2luZyBicmFja2V0OgogICAgICAgIGlmIHRoZSBzdGFjayBpcyBlbXB0eSwgb3IgcG9wKCkgaXMgbm90IGl0cyBwYXJ0bmVyOiByZXR1cm4gRmFsc2UKcmV0dXJuIFRydWUgb25seSBpZiB0aGUgc3RhY2sgaXMgZW1wdHkgYXQgdGhlIGVuZA==',
- (4, 'Fast Track 3'): 'ZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgZGVxdWUKcXVldWUgPC0gZGVxdWUoKQpmb3IgZWFjaCBldmVudDoKICAgIGlmIGl0IHN0YXJ0cyB3aXRoICJqb2luIjogcXVldWUuYXBwZW5kKHRoZSBuYW1lIGFmdGVyICJqb2luICIpCiAgICBpZiBpdCBpcyAic2VydmUiOiBwcmludCAiU2VydmVkOiIgYW5kIHF1ZXVlLnBvcGxlZnQoKQpwcmludCBsaXN0KHF1ZXVlKQoKZXZlbnQuc3BsaXQoKSB0dXJucyAiam9pbiBBZGEiIGludG8gWyJqb2luIiwgIkFkYSJdLg=='}
+ (4, 'Fast Track 3'): 'ZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgZGVxdWUKcXVldWUgPC0gZGVxdWUoKQpmb3IgZWFjaCBldmVudDoKICAgIGlmIGl0IHN0YXJ0cyB3aXRoICJqb2luIjogcXVldWUuYXBwZW5kKHRoZSBuYW1lIGFmdGVyICJqb2luICIpCiAgICBpZiBpdCBpcyAic2VydmUiOiBwcmludCAiU2VydmVkOiIgYW5kIHF1ZXVlLnBvcGxlZnQoKQpwcmludCBsaXN0KHF1ZXVlKQoKZXZlbnQuc3BsaXQoKSB0dXJucyAiam9pbiBBZGEiIGludG8gWyJqb2luIiwgIkFkYSJdLg==',
+ (5, 'Core 1'): 'dHJ5OgogICAgdm9sdGFnZSA8LSBmbG9hdChpbnB1dCguLi4pKQogICAgY3VycmVudCA8LSBmbG9hdChpbnB1dCguLi4pKQogICAgcHJpbnQgdm9sdGFnZSAvIGN1cnJlbnQgdG8gb25lIGRlY2ltYWwgcGxhY2UKZXhjZXB0IFZhbHVlRXJyb3I6CiAgICBwcmludCBhIG1lc3NhZ2UgYWJvdXQgbnVtYmVycyBvbmx5CmV4Y2VwdCBaZXJvRGl2aXNpb25FcnJvcjoKICAgIHByaW50IGEgbWVzc2FnZSBhYm91dCB0aGUgY3VycmVudAoKT25lIHRyeSBjYW4gaGF2ZSBtb3JlIHRoYW4gb25lIGV4Y2VwdC4gUHl0aG9uIHJ1bnMgdGhlIG9uZQp0aGF0IG1hdGNoZXMgdGhlIGVycm9yLg==',
+ (5, 'Core 2'): 'd2hpbGUgVHJ1ZToKICAgIHRyeToKICAgICAgICBwaCA8LSBmbG9hdChpbnB1dCguLi4pKQogICAgICAgIGlmIHBoIGlzIGZyb20gMCB0byAxNDogYnJlYWsKICAgICAgICBwcmludCB0aGUgcmFuZ2UgbWVzc2FnZQogICAgZXhjZXB0IFZhbHVlRXJyb3I6CiAgICAgICAgcHJpbnQgdGhlIG51bWJlcnMtb25seSBtZXNzYWdlCnByaW50IHRoZSByZWNvcmRlZCB2YWx1ZQoKMCA8PSBwaCA8PSAxNCBjaGVja3MgYm90aCBlbmRzIGF0IG9uY2Uu',
+ (5, 'Core 3'): 'Z29vZCA8LSBlbXB0eSBsaXN0CnJlamVjdGVkIDwtIDAKZm9yIGVudHJ5IGluIGxvZ2dlcjoKICAgIHRyeToKICAgICAgICB2YWx1ZSA8LSBmbG9hdChlbnRyeSkKICAgICAgICBpZiB2YWx1ZSBpcyBmcm9tIC01MCB0byA2MDogYXBwZW5kIGl0IHRvIGdvb2QKICAgICAgICBvdGhlcndpc2U6IGFkZCAxIHRvIHJlamVjdGVkCiAgICBleGNlcHQgVmFsdWVFcnJvcjoKICAgICAgICBhZGQgMSB0byByZWplY3RlZApwcmludCB0aGUgY291bnRzIGFuZCBzdW0oZ29vZCkgLyBsZW4oZ29vZCkKClR3byBraW5kcyBvZiBiYWQ6IG5vdCBhIG51bWJlciAodHJ5IGNhdGNoZXMgaXQpIGFuZCBhIG51bWJlciB0aGF0CmNhbm5vdCBiZSByZWFsIChvbmx5IHlvdXIgaWYgY2F0Y2hlcyBpdCku',
+ (5, 'Fast Track 1'): 'ZGVmIGNvbmNlbnRyYXRpb24obW9sZXMsIHZvbHVtZSk6CiAgICBpZiB2b2x1bWUgPD0gMDoKICAgICAgICByYWlzZSBWYWx1ZUVycm9yKCJ2b2x1bWUgbXVzdCBiZSBtb3JlIHRoYW4gemVybyIpCiAgICBpZiBtb2xlcyA8IDA6CiAgICAgICAgcmFpc2UgdGhlIG90aGVyIFZhbHVlRXJyb3IKICAgIHJldHVybiBtb2xlcyAvIHZvbHVtZQoKZm9yIG1vbGVzLCB2b2x1bWUgaW4gc2FtcGxlczoKICAgIHRyeToKICAgICAgICBwcmludCB0aGUgYW5zd2VyCiAgICBleGNlcHQgVmFsdWVFcnJvciBhcyBlcnJvcjoKICAgICAgICBwcmludCBtb2xlcywgdm9sdW1lIGFuZCBlcnJvcgoKImFzIGVycm9yIiBnaXZlcyB5b3UgdGhlIGVycm9yIGl0c2VsZiwgYW5kIHByaW50aW5nIGl0IHNob3dzIGl0cyBtZXNzYWdlLg==',
+ (5, 'Fast Track 2'): 'Zm9yIHRleHQgaW4gcmVhZGluZ3M6CiAgICB0cnk6CiAgICAgICAgdmFsdWUgPC0gZmxvYXQodGV4dCkKICAgIGV4Y2VwdCBWYWx1ZUVycm9yOgogICAgICAgIHByaW50KGYiUmVqZWN0ZWQ6ICd7dGV4dH0nIikKICAgIGVsc2U6CiAgICAgICAgYWNjZXB0ZWQuYXBwZW5kKHZhbHVlKQogICAgZmluYWxseToKICAgICAgICBjaGVja2VkIDwtIGNoZWNrZWQgKyAxCgpUaGUgcXVvdGUgbWFya3Mgcm91bmQge3RleHR9IHNob3cgaXQgd2FzIGEgc3RyaW5nIHRoYXQgY291bGQgbm90CmJlIHR1cm5lZCBpbnRvIGEgbnVtYmVyLg==',
+ (5, 'Fast Track 3'): 'Z29vZCA8LSAwCnRvdGFsIDwtIDAKbGluZV9udW1iZXIgPC0gMApmb3IgbGluZSBpbiBsaW5lczoKICAgIGxpbmVfbnVtYmVyIDwtIGxpbmVfbnVtYmVyICsgMQogICAgdHJ5OgogICAgICAgIHBhcnRzIDwtIGxpbmUuc3BsaXQoIiwiKQogICAgICAgIHJhaW4gPC0gZmxvYXQocGFydHNbMl0pCiAgICBleGNlcHQgSW5kZXhFcnJvcjoKICAgICAgICBwcmludCB0aGUgbGluZSBudW1iZXIgYW5kICJtaXNzaW5nIGEgZmllbGQiCiAgICBleGNlcHQgVmFsdWVFcnJvcjoKICAgICAgICBwcmludCB0aGUgbGluZSBudW1iZXIgYW5kICJub3QgYSBudW1iZXIiCiAgICBlbHNlOgogICAgICAgIGFkZCAxIHRvIGdvb2QgYW5kIHJhaW4gdG8gdG90YWw='}
 
 
 def _fingerprint(week, value):
