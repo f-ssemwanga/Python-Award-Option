@@ -198,7 +198,8 @@ def hint(week, challenge, level=1):
         return
     print(base64.b64decode(_HINTS[key]).decode())
     if key in _GAPS:
-        print("\nStill stuck after this? Change the 1 to a 2 in the hint cell and run it again.")
+        print("\nStill stuck after this? Run the hint again as level 2:")
+        print(f'    hint({week}, "{challenge}", 2)')
         print("You get the code with gaps to fill in.")
 
 
@@ -209,3 +210,17 @@ def data_file(name):
         if os.path.exists(path):
             return path
     raise FileNotFoundError(f"Cannot find {name}. Open the notebook from inside the course folder.")
+
+
+def use_week_folder(week):
+    """Make the files a notebook opens and saves live in that week's folder.
+
+    Depending on how Jupyter was started, a notebook can run from the course
+    folder instead of its own folder, and then open("notes.txt", "w") puts the
+    file somewhere you do not expect. This moves to the right folder every time.
+    """
+    folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), f"Week{week}")
+    if not os.path.isdir(folder):
+        raise FileNotFoundError(f"Cannot find the Week{week} folder next to coursetools.py.")
+    os.chdir(folder)
+    print(f"Files you open or save will be in: {folder}")
