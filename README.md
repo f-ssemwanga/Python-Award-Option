@@ -14,7 +14,7 @@ The challenges are the kind of work Python is used for in science and engineerin
 2. **`Week1/usingGitHub.ipynb`**: fork the course, clone it into VS Code, and make your first commit.
 3. **`Week1/Week1-Python-intro.ipynb`**: the first lesson, which opens with the placement check.
 
-Each week has its own folder, `Week1` to `Week10`. Every notebook is written to be run in VS Code, cell by cell.
+Each week has its own folder, `Week1` to `Week11`. Every notebook is written to be run in VS Code, cell by cell.
 
 ### The two lanes
 
@@ -46,8 +46,9 @@ The lanes only run where GCSE has already covered the basics, which is Weeks 1 t
 | 8 | Persistence: saving objects | `pickle` for lists and objects, a cache, and JSON as the safe alternative | No split, new to everyone |
 | 9 | Databases and Python | SQLite from Python, safe `?` placeholders, `SELECT`, `GROUP BY`, saving objects in a table | No split, new to everyone |
 | 10 | Portfolio project | A weather explorer program: menu, class, validation, a chart, saved results, on GitHub | No split, the same project for everyone |
+| 11 | Your program in a window | A PyQt6 desktop version of the weather explorer, with buttons and a chart, run in Thonny | No split, the same for everyone |
 
-All ten weeks are written. From Week 6 every week reads the weather data and ends with one chart.
+All eleven weeks are written. From Week 6 every week reads the weather data and ends with one chart.
 
 Git and GitHub are taught to everyone together in Week 1, because nobody can hand in any work without a repository. Git is new to both lanes, so there is no split for that part of the lesson.
 
@@ -66,6 +67,7 @@ These are the course's topics, and the week each one is taught in.
 - **Object-oriented programming** (Weeks 7 and 8): classes and objects to model real-world things, and saving them between runs.
 - **Python and databases** (Week 9): storing and retrieving data from Python.
 - **Portfolio project** (Week 10): one program that draws the whole course together.
+- **Desktop apps** (Week 11): the same program in a window, with PyQt6.
 
 ### The course dataset
 
