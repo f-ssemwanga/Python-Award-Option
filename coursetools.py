@@ -134,6 +134,12 @@ _HINTS = {(1, 'Core 1'): 'Y2Vsc2l1cyAgICA8LSBhc2sgdGhlIHVzZXIsIGFuZCB0dXJuIHRoZS
  (11, 'Challenge 3'): 'SW4gX19pbml0X186CiAgICBzZWxmLmNvbXBhcmVfYm94IDwtIFFDb21ib0JveCgpCiAgICBzZWxmLmNvbXBhcmVfYm94LmFkZEl0ZW1zKFsiKG5vIGNvbXBhcmlzb24pIl0gKyBTVEFUSU9OUykKICAgIGNvbnRyb2xzLmFkZFdpZGdldChzZWxmLmNvbXBhcmVfYm94KQoKSW4gc2hvd195ZWFyLCBhZnRlciBwbG90dGluZyB0aGUgZmlyc3Qgc3RhdGlvbiB3aXRoIGxhYmVsPXN0YXRpb246CiAgICBvdGhlciA8LSBzZWxmLmNvbXBhcmVfYm94LmN1cnJlbnRUZXh0KCkKICAgIGlmIG90aGVyIGluIFNUQVRJT05TOgogICAgICAgIGxvYWRfeWVhcihvdGhlciwgeWVhciksIHRoZW4gYXhlcy5wbG90KC4uLiwgbGFiZWw9b3RoZXIpCiAgICBheGVzLmxlZ2VuZCgpCgoiKG5vIGNvbXBhcmlzb24pIiBpcyBub3QgaW4gU1RBVElPTlMsIHNvIHRoZSBpZiBza2lwcyBpdC4='}
 
 
+# Second-level hints: code with gaps, for anyone still stuck after the first hint.
+_GAPS = {(6, 'Challenge 1'): 'IyBDb3B5IHRoaXMgaW50byB0aGUgY2VsbCBiZWxvdywgdGhlbiByZXBsYWNlIGV2ZXJ5IF9fXwoKIyBTdGVwIDE6IHdyaXRlIGVhY2ggcmVhZGluZyBvbiBpdHMgb3duIGxpbmUKd2l0aCBvcGVuKCJjb29saW5nLnR4dCIsICJfX18iKSBhcyBmaWxlOgogICAgZm9yIHJlYWRpbmcgaW4gcmVhZGluZ3M6CiAgICAgICAgZmlsZS53cml0ZShmIntfX199XG4iKQoKIyBTdGVwIDI6IHJlYWQgdGhlIGxpbmVzIGJhY2ssIHR1cm5pbmcgZWFjaCBpbnRvIGEgZmxvYXQKdmFsdWVzID0gW10Kd2l0aCBvcGVuKCJjb29saW5nLnR4dCIsICJyIikgYXMgZmlsZToKICAgIGZvciBsaW5lIGluIGZpbGU6CiAgICAgICAgdmFsdWVzLmFwcGVuZChfX18obGluZSkpCnByaW50KGYie2xlbih2YWx1ZXMpfSByZWFkaW5ncywgbWVhbiB7c3VtKHZhbHVlcykgLyBsZW4odmFsdWVzKTouMmZ9IEMiKQoKIyBTdGVwIDM6IGFkZCB0aGUgbGF0ZSByZWFkaW5ncyB0byB0aGUgRU5EIG9mIHRoZSBmaWxlCndpdGggb3BlbigiY29vbGluZy50eHQiLCAiX19fIikgYXMgZmlsZToKICAgIGZvciByZWFkaW5nIGluIF9fXzoKICAgICAgICBmaWxlLndyaXRlKGYie3JlYWRpbmd9XG4iKQoKIyBUaGVuIGNvcHkgeW91ciBTdGVwIDIgY29kZSBoZXJlIHRvIHJlYWQgaXQgYmFjayBhbmQgcHJpbnQgYWdhaW4=',
+ (6, 'Challenge 2'): 'IyBDb3B5IHRoaXMgaW50byB0aGUgY2VsbCBiZWxvdywgdGhlbiByZXBsYWNlIGV2ZXJ5IF9fXwoKdG90YWwgPSAwCndldHRlc3RfbW9udGggPSAwCndldHRlc3RfcmFpbiA9IDAKZm91bmQgPSAwCgojIFN0ZXBzIDEgYW5kIDI6IGZpbmQgdGhlIExlcndpY2sgMjAyNCByb3dzIGFuZCBhZGQgdXAgdGhlIHJhaW4Kd2l0aCBvcGVuKGRhdGFfZmlsZSgidWtfd2VhdGhlci5jc3YiKSkgYXMgZmlsZToKICAgIHJlYWRlciA9IGNzdi5yZWFkZXIoZmlsZSkKICAgIG5leHQocmVhZGVyKQogICAgZm9yIHJvdyBpbiByZWFkZXI6CiAgICAgICAgaWYgcm93WzBdID09ICJfX18iIGFuZCByb3dbMV0gPT0gIl9fXyI6CiAgICAgICAgICAgIGZvdW5kID0gZm91bmQgKyAxCiAgICAgICAgICAgIHJhaW4gPSBmbG9hdChyb3dbX19fXSkKICAgICAgICAgICAgdG90YWwgPSB0b3RhbCArIHJhaW4KICAgICAgICAgICAgaWYgcmFpbiA+IF9fXzoKICAgICAgICAgICAgICAgIHdldHRlc3RfcmFpbiA9IHJhaW4KICAgICAgICAgICAgICAgIHdldHRlc3RfbW9udGggPSBpbnQocm93W19fX10pCgpwcmludChmIntmb3VuZH0gbW9udGhzIGZvdW5kIikKCiMgU3RlcCAzOiB3cml0ZSB0aGUgc3VtbWFyeSwgdGhlbiByZWFkIGl0IGJhY2sKd2l0aCBvcGVuKCJsZXJ3aWNrXzIwMjQudHh0IiwgIl9fXyIpIGFzIGZpbGU6CiAgICBmaWxlLndyaXRlKCJMZXJ3aWNrLCAyMDI0XG4iKQogICAgZmlsZS53cml0ZShmIlRvdGFsIHJhaW5mYWxsOiB7dG90YWw6LjFmfSBtbVxuIikKICAgIGZpbGUud3JpdGUoX19fKQoKd2l0aCBvcGVuKCJsZXJ3aWNrXzIwMjQudHh0IiwgInIiKSBhcyBmaWxlOgogICAgcHJpbnQoZmlsZS5yZWFkKCkpCgojIENvbHVtbiBudW1iZXJzOiAwIHN0YXRpb24sIDEgeWVhciwgMiBtb250aCwgMyB0bWF4LCA0IHRtaW4sIDUgYWYsIDYgcmFpbiwgNyBzdW4=',
+ (6, 'Challenge 3'): 'IyBDb3B5IHRoaXMgaW50byB0aGUgY2VsbCBiZWxvdywgdGhlbiByZXBsYWNlIGV2ZXJ5IF9fXwoKIyBTdGVwIDE6IG9uZSBsaXN0IGZvciBlYWNoIHN0YXRpb24KbGVyd2ljayA9IFtdCmNhbWJvcm5lID0gW10Kd2l0aCBvcGVuKGRhdGFfZmlsZSgidWtfd2VhdGhlci5jc3YiKSkgYXMgZmlsZToKICAgIHJlYWRlciA9IGNzdi5yZWFkZXIoZmlsZSkKICAgIG5leHQocmVhZGVyKQogICAgZm9yIHJvdyBpbiByZWFkZXI6CiAgICAgICAgaWYgcm93WzFdID09ICIyMDI0IjoKICAgICAgICAgICAgaWYgcm93WzBdID09ICJMZXJ3aWNrIjoKICAgICAgICAgICAgICAgIGxlcndpY2suYXBwZW5kKGZsb2F0KHJvd1tfX19dKSkKICAgICAgICAgICAgZWxpZiByb3dbMF0gPT0gIl9fXyI6CiAgICAgICAgICAgICAgICBfX18KcHJpbnQobGVuKGxlcndpY2spLCBsZW4oY2FtYm9ybmUpKQoKIyBTdGVwIDI6IGJvdGggbGluZXMgb24gb25lIGNoYXJ0Cm1vbnRocyA9IGxpc3QocmFuZ2UoMSwgMTMpKQpwbHQucGxvdChtb250aHMsIGxlcndpY2ssIG1hcmtlcj0ibyIsIGxhYmVsPSJMZXJ3aWNrIikKcGx0LnBsb3QoX19fKQpwbHQueGxhYmVsKCJNb250aCIpCnBsdC55bGFiZWwoIl9fXyIpCnBsdC50aXRsZSgiX19fIikKcGx0LmxlZ2VuZCgpCnBsdC5zaG93KCkKCiMgU3RlcCAzOiBKdWx5IGlzIG1vbnRoIDcsIGJ1dCBQeXRob24gY291bnRzIHBvc2l0aW9ucyBmcm9tIDAKZGlmZmVyZW5jZSA9IGNhbWJvcm5lW19fX10gLSBsZXJ3aWNrW19fX10KcHJpbnQoZiJKdWx5OiBDYW1ib3JuZSB3YXMge2RpZmZlcmVuY2U6LjFmfSBDIHdhcm1lciIp'}
+
+
 def _fingerprint(week, value):
     return hashlib.sha256(_TIDY[week](value).encode()).hexdigest()[:16]
 
@@ -177,9 +183,23 @@ def check(week, *answers):
         print("Lanes are decided fresh every week, so this says nothing about next week.")
 
 
-def hint(week, challenge):
-    """Print the hint for one challenge, for example hint(3, "Core 1")."""
-    print(base64.b64decode(_HINTS[(week, challenge)]).decode())
+def hint(week, challenge, level=1):
+    """Print the hint for one challenge, for example hint(3, "Core 1").
+
+    Level 1 is the plan in plain English. Some challenges also have a level 2,
+    hint(6, "Challenge 1", 2), which gives the code with gaps to fill in.
+    """
+    key = (week, challenge)
+    if level == 2:
+        if key in _GAPS:
+            print(base64.b64decode(_GAPS[key]).decode())
+        else:
+            print("There is no level 2 hint for this one. Put your hand up.")
+        return
+    print(base64.b64decode(_HINTS[key]).decode())
+    if key in _GAPS:
+        print("\nStill stuck after this? Change the 1 to a 2 in the hint cell and run it again.")
+        print("You get the code with gaps to fill in.")
 
 
 def data_file(name):
